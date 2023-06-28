@@ -30,51 +30,51 @@ describe('Get all favorites', () => {
 
 })
 //Test signup
-// describe('Post usuario', () => {
-//     it('Se crea un usuario', done =>{
-//         request 
-//             .post('/auth/signup')
-//             .send(
-//                 {
-//                     "name": "test2",
-//                     "email": "test2@gmail.com",//cambiar para cada test
-//                     "password": "1234"
+describe('Post usuario', () => {
+    it('Se crea un usuario', done =>{
+        request 
+            .post('/auth/signup')
+            .send(
+                {
+                    "name": "test2",
+                    "email": "test2@gmail.com",//cambiar para cada test
+                    "password": "1234"
 
-//                 }
-//             )
-//             .set('Accept', 'application/json')
-//             .expect('Content-Type', /json/)
-//             .expect(200)
-//             .end((err,res)=>{
-//                 if (err) return done(err)
-//                 return done()
+                }
+            )
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .end((err,res)=>{
+                if (err) return done(err)
+                return done()
 
-//             })
-//     })
+            })
+    })
 
-// })
+})
 //Test Login
-// describe('Post usuario', () => {
-//     it('Se logea un usuario', done =>{
-//         request 
-//             .post('/auth/login')
-//             .send(
-//                 {
-//                     "email": "test2@gmail.com",
-//                     "password": "1234"
-//                 }
-//             )
-//             .set('Accept', 'application/json')
-//             .expect('Content-Type', /json/)
-//             .expect(200)
-//             .end((err,res)=>{
-//                 if (err) return done(err)
-//                 return done()
+describe('Post usuario', () => {
+    it('Se logea un usuario', done =>{
+        request 
+            .post('/auth/login')
+            .send(
+                {
+                    "email": "test2@gmail.com",
+                    "password": "1234"
+                }
+            )
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .end((err,res)=>{
+                if (err) return done(err)
+                return done()
 
-//             })
-//     })
+            })
+    })
 
-// })
+})
 
 
 //Test Delete User
